@@ -1,6 +1,6 @@
 # Programming-Alpha-To-Omega
 
-## 准备
+## 一.准备
 
 ### 编辑器(推荐WebStorm)
 
