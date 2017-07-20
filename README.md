@@ -1,8 +1,8 @@
 # Programming-Alpha-To-Omega
 
-### 一.准备
+### 一. 准备
 
-#### 编辑器 (推荐WebStorm)
+#### 编辑器 (选择一款你用的顺手的IDE)
 
  * [WebStorm](https://www.jetbrains.com/webstorm/)
  * [Sublime](http://www.sublimetext.com/)
@@ -11,7 +11,7 @@
 #### 快捷键 (熟练掌握，帮助提高开发效率)
 
  * IDE快捷键
- * 操作系统快捷键
+ * 操作系统快捷键 [MAC快捷键](https://support.apple.com/zh-cn/HT201236)
 
 #### 环境（前端基础开发环境）
 
