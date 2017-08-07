@@ -7,6 +7,11 @@
  * [WebStorm](https://www.jetbrains.com/webstorm/)
  * [Sublime](http://www.sublimetext.com/)
  * [Atom](https://atom.io/)
+    * atom-beautify
+    * file-icons
+    * git-plus
+    * linter-eslint
+    * pigments
 
 #### 快捷键 (熟练掌握，帮助提高开发效率)
 
