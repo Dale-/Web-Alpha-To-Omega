@@ -28,6 +28,15 @@
  * [git](http://www.git-scm.com)
  * [Webpack](http://webpack.github.io/)
 
+#### Chrome插件
+
+  * [Octotree](https://chrome.google.com/webstore/search/Octotree?utm_source=chrome-ntp-icon)
+  * [Momentum](https://chrome.google.com/webstore/search/Momentum?utm_source=chrome-ntp-icon)
+  * [Extension Manager](https://chrome.google.com/webstore/detail/extension-manager/gjldcdngmdknpinoemndlidpcabkggco/related)
+  *  Front End
+    * [Redux](https://chrome.google.com/webstore/search/Redux?utm_source=chrome-ntp-icon)
+    * [Angular Scope Inspector]
+
 ### 二. 基础知识
 
 #### HTML入门
