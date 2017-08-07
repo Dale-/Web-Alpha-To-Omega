@@ -21,6 +21,7 @@
 #### 环境（前端基础开发环境）
 
  * [iTerm2](https://iterm2.com/)
+   * oh-my-zsh(http://ohmyz.sh/)
  * [NodeJS](https://nodejs.org/)
  * [NPM](https://www.npmjs.com)
  * [CNPM] npm install -g cnpm --registry=https://registry.npm.taobao.org
