@@ -32,8 +32,8 @@
   * [Momentum](https://chrome.google.com/webstore/search/Momentum?utm_source=chrome-ntp-icon)
   * [Extension Manager](https://chrome.google.com/webstore/detail/extension-manager/gjldcdngmdknpinoemndlidpcabkggco/related)
   *  Front End
-    * [Redux](https://chrome.google.com/webstore/search/Redux?utm_source=chrome-ntp-icon)
-    * [Angular Scope Inspector]
+     * [Redux](https://chrome.google.com/webstore/search/Redux?utm_source=chrome-ntp-icon)
+     * Angular Scope Inspector
 
 #### Common App
 
