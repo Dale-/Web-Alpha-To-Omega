@@ -15,6 +15,7 @@
 
 #### 环境（前端基础开发环境）
 
+ * [iTerm2](https://iterm2.com/)
  * [NodeJS](https://nodejs.org/)
  * [NPM](https://www.npmjs.com)
  * [git](http://www.git-scm.com)
