@@ -37,6 +37,7 @@
   * [Evernote](https://evernote.com/)
   * [iTerm2](https://iterm2.com/)
     * oh-my-zsh(http://ohmyz.sh/)
+  * [Postman](https://www.getpostman.com/)  
 
 ### 二. 基础知识
 
