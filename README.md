@@ -18,7 +18,7 @@
 
  * [NodeJS](https://nodejs.org/)
  * [NPM](https://www.npmjs.com)
- * [CNPM] npm install -g cnpm --registry=https://registry.npm.taobao.org
+    * CNPM: npm install -g cnpm --registry=https://registry.npm.taobao.org
  * [git](http://www.git-scm.com)
  * [Webpack](http://webpack.github.io/)
 
