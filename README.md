@@ -7,7 +7,7 @@
  * [WebStorm](https://www.jetbrains.com/webstorm/)
  * [Sublime](http://www.sublimetext.com/)
  * [Atom](https://atom.io/)
-    * [打造高效的Atom开发环境](https://dale-.github.io/2017/08/08/Atom-Shortcut/)
+    * [打造高效的Atom开发环境](https://github.com/Dale-/Web-Alpha-To-Omega/blob/master/shortcut/atom.md)
 
 #### 快捷键 (熟练掌握，帮助提高开发效率)
 
@@ -36,7 +36,7 @@
   * [X-mind](http://www.xmind.net/)
   * [Evernote](https://evernote.com/)
   * [iTerm2](https://iterm2.com/)
-    * oh-my-zsh(http://ohmyz.sh/)
+    * [快捷键传送门](https://github.com/Dale-/Web-Alpha-To-Omega/blob/master/shortcut/iterm.md)
   * [Postman](https://www.getpostman.com/)  
 
 ### 二. 基础知识
