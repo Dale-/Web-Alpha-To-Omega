@@ -13,6 +13,7 @@
 
  * IDE快捷键
  * 操作系统快捷键 [MAC快捷键](https://support.apple.com/zh-cn/HT201236)
+ * Chrome DevTools快捷键 [传送门](https://developers.google.com/web/tools/chrome-devtools/shortcuts)
 
 #### 环境（前端基础开发环境）
 
