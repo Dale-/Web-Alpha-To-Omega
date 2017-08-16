@@ -2,12 +2,12 @@
 
 ### 一. 准备
 
-#### 编辑器 (选择一款你用的顺手的IDE)
+#### 编辑器
 
- * [WebStorm](https://www.jetbrains.com/webstorm/)
- * [Sublime](http://www.sublimetext.com/)
  * [Atom](https://atom.io/)
     * [打造高效的Atom开发环境](https://github.com/Dale-/Web-Alpha-To-Omega/blob/master/shortcut/atom.md)
+ * [WebStorm](https://www.jetbrains.com/webstorm/)
+ * [Sublime](http://www.sublimetext.com/)
 
 #### 快捷键 (熟练掌握，帮助提高开发效率)
 
