@@ -24,6 +24,7 @@
 `ctrl-shift-M` Markdown预览
 
 ### 选取
+`cmd-shift-D` 复制一行代码
 `ctrl-shift-P`  选取至上一行  
 `ctrl-shift-N`  选取至下一样  
 `ctrl-shift-B`  选取至前一个字符  
