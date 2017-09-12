@@ -38,6 +38,10 @@
 `cmd-L`  选取一行，继续按回选取下一行  
 `ctrl-shift-W`  选取当前单词  
 
+### 移动
+`ctrl-cmd-up` 当前行向上移动
+`ctrl-cmd-down` 当前行向下移动
+
 ### 查找和替换  
 `cmd-F` 在buffer中查找  
 `cmd-shift-f` 在整个工程中查找  
