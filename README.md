@@ -1,21 +1,21 @@
-# Programming-Alpha-To-Omega
+# Programming-Alpha-To-Omega(Front End)
 
-### 一. 准备
+### Prepare
 
-#### 编辑器
+#### IDE
 
  * [Atom](https://atom.io/)
     * [打造高效的Atom开发环境](https://github.com/Dale-/Web-Alpha-To-Omega/blob/master/shortcut/atom.md)
  * [WebStorm](https://www.jetbrains.com/webstorm/)
  * [Sublime](http://www.sublimetext.com/)
 
-#### 快捷键 (熟练掌握，帮助提高开发效率)
+#### Short Cut
 
  * IDE快捷键
  * 操作系统快捷键 [MAC快捷键](https://support.apple.com/zh-cn/HT201236)
  * Chrome DevTools快捷键 [传送门](https://developers.google.com/web/tools/chrome-devtools/shortcuts)
 
-#### 环境（前端基础开发环境）
+#### Front End Environment
 
  * [NodeJS](https://nodejs.org/)
  * [NPM](https://www.npmjs.com)
@@ -23,7 +23,7 @@
  * [git](http://www.git-scm.com)
  * [Webpack](http://webpack.github.io/)
 
-#### Chrome插件
+#### Chrome Plugin
 
   * [Octotree](https://chrome.google.com/webstore/search/Octotree?utm_source=chrome-ntp-icon)
   * [Momentum](https://chrome.google.com/webstore/search/Momentum?utm_source=chrome-ntp-icon)
@@ -40,10 +40,10 @@
     * [快捷键传送门](https://github.com/Dale-/Web-Alpha-To-Omega/blob/master/shortcut/iterm.md)
   * [Postman](https://www.getpostman.com/)  
 
-### 二. 基础知识
+### Basic Info
 
-#### HTML入门
+#### HTML
 
-#### CSS入门
+#### CSS
 
-#### JavaScript入门
+#### JavaScript
