@@ -1,9 +1,5 @@
 ## 快捷键
 
-### 创建
-`a` 快速创建文件
-`m` 快速创建文件夹
-
 ### 文件
 `ctrl-shift-s`  保存所有打开的文件  
 `cmd-shift-o`  打开目录  
@@ -49,6 +45,9 @@
 ### 查找和替换  
 `cmd-F` 在buffer中查找  
 `cmd-shift-f` 在整个工程中查找  
+
+### 创建
+`a` 快速创建文件(current directory)
 
 ---
 
