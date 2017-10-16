@@ -2,7 +2,7 @@
 
 ## Prepare
 
-#### IDE
+#### Dev Environment
 
  * [Atom](https://atom.io/)
     * [打造高效的Atom开发环境](https://github.com/Dale-/Web-Alpha-To-Omega/blob/master/shortcut/atom.md)
