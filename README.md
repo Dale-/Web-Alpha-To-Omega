@@ -63,7 +63,7 @@
 
 ![](/img/javascript/javascript-xmind.png)
 
-### 团队合作
+### TeamWork
 
 * Git
   * [Basic](http://rogerdudler.github.io/git-guide/)
@@ -79,13 +79,13 @@
   * [WebPack](https://webpack.js.org/)
 * 自动构建脚本
 
-### 测试
+### Testing
 
-* 单元测试
+* Unit Testing
   * [Jasmine](https://jasmine.github.io/2.4/introduction.html)
   * [Jest](https://facebook.github.io/jest/docs/en/getting-started.html)
-* UI测试
-* 集成测试
+* UI Test
+* Integration Testing
 * [TDD Demo](https://github.com/Dale-/tdd-guess-number-game)
 
 ### Build your own pages
