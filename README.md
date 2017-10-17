@@ -44,7 +44,7 @@
 
 ### CSS Basic
 
-* CSS 布局 [传送门](http://learnlayout.com/)
+* CSS Layout [传送门](http://learnlayout.com/)
 * CSS 盒模型 [传送门](http://learnlayout.com/box-model.html)
 * CSS 选择器 [传送门](https://developer.mozilla.org/zh-CN/docs/Web/Guide/CSS/Getting_started/Selectors)
 * CSS 优先级 [传送门](https://developer.mozilla.org/zh-CN/docs/Web/CSS/Specificity)
