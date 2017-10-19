@@ -44,21 +44,21 @@
 
 ### CSS Basic
 
-* Layout [传送门](http://learnlayout.com/)
-* Box Model [传送门](http://learnlayout.com/box-model.html)
-* Selector [传送门](https://developer.mozilla.org/zh-CN/docs/Web/Guide/CSS/Getting_started/Selectors)
-* Priority [传送门](https://developer.mozilla.org/zh-CN/docs/Web/CSS/Specificity)
-* Standard [传送门](http://codeguide.bootcss.com/)
-* CSS3 [传送门](https://www.ibm.com/developerworks/cn/web/1202_zhouxiang_css3/)
+* Layout [Entry](http://learnlayout.com/)
+* Box Model [Entry](http://learnlayout.com/box-model.html)
+* Selector [Entry](https://developer.mozilla.org/zh-CN/docs/Web/Guide/CSS/Getting_started/Selectors)
+* Priority [Entry](https://developer.mozilla.org/zh-CN/docs/Web/CSS/Specificity)
+* Standard [Entry](http://codeguide.bootcss.com/)
+* CSS3 [Entry](https://www.ibm.com/developerworks/cn/web/1202_zhouxiang_css3/)
 
 ![](/img/css/css-xmind.png)
 
 ### JavaScript Basic
 
 * 语法: 数据类型、数值、变量、表达式、运算符和语句
-* 标准库: Object、Array、Boolean、Number、String、Math、Date、RegExp、JSON [传送门](http://javascript.ruanyifeng.com/stdlib/object.html#)
+* 标准库: Object、Array、Boolean、Number、String、Math、Date、RegExp、JSON [Entry](http://javascript.ruanyifeng.com/stdlib/object.html#)
 * 面向对象: [this](https://dale-.github.io/2017/05/28/Understand-JavaScript%E2%80%99s-%E2%80%9Cthis%E2%80%9D/)、prototype、class、inherit
-* ES6: let、const、变量的解构、基本类型的扩展、Symbol、Set Map、Promise、Class、inherit [传送门](http://es6.ruanyifeng.com/)
+* ES6: let、const、变量的解构、基本类型的扩展、Symbol、Set Map、Promise、Class、inherit [Entry](http://es6.ruanyifeng.com/)
 * 客户端: DOM、BOM、事件处理、客户端存储
 
 ![](/img/javascript/javascript-xmind.png)
@@ -68,7 +68,7 @@
 * Git
   * [Basic](http://rogerdudler.github.io/git-guide/)
   * [TeamWork](http://nvie.com/posts/a-successful-git-branching-model/)
-* RESTful API交互 [传送门](https://codeplanet.io/principles-good-restful-api-design/)
+* RESTful API交互 [Entry](https://codeplanet.io/principles-good-restful-api-design/)
 * JS规范 [ESLint](http://eslint.org/docs/user-guide/getting-started)
 
 ### 工程化
