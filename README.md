@@ -68,8 +68,8 @@
 * Git
   * [Basic](http://rogerdudler.github.io/git-guide/)
   * [TeamWork](http://nvie.com/posts/a-successful-git-branching-model/)
-* RESTful API交互 [Entry](https://codeplanet.io/principles-good-restful-api-design/)
-* JS规范 [ESLint](http://eslint.org/docs/user-guide/getting-started)
+* RESTful [Entry](https://codeplanet.io/principles-good-restful-api-design/)
+* JS standard[ESLint](http://eslint.org/docs/user-guide/getting-started)
 
 ### 工程化
 
