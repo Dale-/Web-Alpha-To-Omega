@@ -11,9 +11,9 @@
 
 #### Short Cut
 
- * IDE快捷键
- * 操作系统快捷键 [MAC快捷键](https://support.apple.com/zh-cn/HT201236)
- * Chrome DevTools快捷键 [传送门](https://developers.google.com/web/tools/chrome-devtools/shortcuts)
+ * IDE
+ * Operation System [MAC](https://support.apple.com/zh-cn/HT201236)
+ * Chrome DevTools [Entry](https://developers.google.com/web/tools/chrome-devtools/shortcuts)
 
 #### Front End Environment
 
@@ -37,18 +37,18 @@
   * [X-mind](http://www.xmind.net/)
   * [Evernote](https://evernote.com/)
   * [iTerm2](https://iterm2.com/)
-    * [快捷键传送门](https://github.com/Dale-/Web-Alpha-To-Omega/blob/master/shortcut/iterm.md)
+    * [Shortcut](https://github.com/Dale-/Web-Alpha-To-Omega/blob/master/shortcut/iterm.md)
   * [Postman](https://www.getpostman.com/)  
 
 ## Basic Info
 
 ### CSS Basic
 
-* CSS Layout [传送门](http://learnlayout.com/)
-* CSS 盒模型 [传送门](http://learnlayout.com/box-model.html)
-* CSS 选择器 [传送门](https://developer.mozilla.org/zh-CN/docs/Web/Guide/CSS/Getting_started/Selectors)
-* CSS 优先级 [传送门](https://developer.mozilla.org/zh-CN/docs/Web/CSS/Specificity)
-* CSS 编码规范 [传送门](http://codeguide.bootcss.com/)
+* Layout [传送门](http://learnlayout.com/)
+* Box Model [传送门](http://learnlayout.com/box-model.html)
+* Selector [传送门](https://developer.mozilla.org/zh-CN/docs/Web/Guide/CSS/Getting_started/Selectors)
+* Priority [传送门](https://developer.mozilla.org/zh-CN/docs/Web/CSS/Specificity)
+* Standard [传送门](http://codeguide.bootcss.com/)
 * CSS3 [传送门](https://www.ibm.com/developerworks/cn/web/1202_zhouxiang_css3/)
 
 ![](/img/css/css-xmind.png)
