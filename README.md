@@ -55,11 +55,11 @@
 
 ### JavaScript Basic
 
-* 语法: 数据类型、数值、变量、表达式、运算符和语句
-* 标准库: Object、Array、Boolean、Number、String、Math、Date、RegExp、JSON [Entry](http://javascript.ruanyifeng.com/stdlib/object.html#)
-* 面向对象: [this](https://dale-.github.io/2017/05/28/Understand-JavaScript%E2%80%99s-%E2%80%9Cthis%E2%80%9D/)、prototype、class、inherit
+* syntax: 数据类型、数值、变量、表达式、运算符和语句
+* Standards: Object、Array、Boolean、Number、String、Math、Date、RegExp、JSON [Entry](http://javascript.ruanyifeng.com/stdlib/object.html#)
+* OO: [this](https://dale-.github.io/2017/05/28/Understand-JavaScript%E2%80%99s-%E2%80%9Cthis%E2%80%9D/)、prototype、class、inherit
 * ES6: let、const、变量的解构、基本类型的扩展、Symbol、Set Map、Promise、Class、inherit [Entry](http://es6.ruanyifeng.com/)
-* 客户端: DOM、BOM、事件处理、客户端存储
+* Server: DOM、BOM、事件处理、客户端存储
 
 ![](/img/javascript/javascript-xmind.png)
 
