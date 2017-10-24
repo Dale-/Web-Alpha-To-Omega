@@ -69,7 +69,7 @@
   * [Basic](http://rogerdudler.github.io/git-guide/)
   * [TeamWork](http://nvie.com/posts/a-successful-git-branching-model/)
 * RESTful [[Entry]](https://codeplanet.io/principles-good-restful-api-design/)
-* JS standard[ESLint](http://eslint.org/docs/user-guide/getting-started)
+* JS standard[[ESLint]](http://eslint.org/docs/user-guide/getting-started)
 
 ### 工程化
 
@@ -86,9 +86,9 @@
   * [Jest](https://facebook.github.io/jest/docs/en/getting-started.html)
 * UI Test
 * Integration Testing
-* [TDD Demo](https://github.com/Dale-/tdd-guess-number-game)
+* [[TDD Demo]](https://github.com/Dale-/tdd-guess-number-game)
 
 ### Build your own pages
 
-* demo in github [Github](http://github.com/)
-* build your blog in github [Use Hexo](https://dale-.github.io/2015/10/23/Hexo-Github-Blog/)
+* demo in github [[Github]](http://github.com/)
+* build your blog in github [[Use Hexo]](https://dale-.github.io/2015/10/23/Hexo-Github-Blog/)
