@@ -40,7 +40,7 @@
   // [1]
 ```
 
-### Array.form()
+## Array.form()
 
 > `Array.from` 方法用于将两类对象转为真正的数组：类似数组的对象(array-like object) 和 可遍历(iterable) 的对象(包括ES6新增的数据结构SET和MAP)。
 
@@ -61,3 +61,25 @@
   // ['a', 'b', 'c']
 
 ```
+
+## Array.of()
+
+> `Array.of`方法用于将一组值，转换为数组。
+
+```javascript
+  Array.of(3, 1, 8) // [3, 1, 8]
+  Array.of(3) // [3]
+  Array.of(3).length // 1
+```
+
+## 数组实例的 copyWithin()
+
+## 数组实例的 find() 和 findIndex()
+
+## 数组实例的fill()
+
+## 数组实例的 entries(), keys() 和 values()
+
+## 数组实例的 includes()
+
+## 数组的空位            
