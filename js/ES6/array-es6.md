@@ -1,5 +1,6 @@
 ## 扩展运算符 (spread)
 
+
 > 扩展运算符是三个点（...）。它好比rest参数的逆运算，将一个数组转为用逗号分隔的参数序列。
 
 ```javascript
@@ -37,4 +38,26 @@
 ```javascript
   [...[], 1]
   // [1]
+```
+
+### Array.form()
+
+> `Array.from` 方法用于将两类对象转为真正的数组：类似数组的对象(array-like object) 和 可遍历(iterable) 的对象(包括ES6新增的数据结构SET和MAP)。
+
+```javascript
+  let arrayLike = {
+    '0': 'a',
+    '1': 'b',
+    '2': 'c',
+    length: 3
+  };
+
+  // ES5的写法
+  var array1 = [].slice.call(arrayLike);
+  // ['a', 'b', 'c']
+
+  // ES6的写法
+  let array2 = Array.from(arrayLike);
+  // ['a', 'b', 'c']
+
 ```
