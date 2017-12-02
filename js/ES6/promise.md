@@ -36,3 +36,17 @@ getJSON('/posts.json').then(function(posts) {
   console.log('发生错误！', error);
 });
 ```
+
+### Promise.all()
+```javascript
+// 生成一个Promise对象的数组
+const promises = [2, 3, 5, 7, 11, 13].map(function (id) {
+  return getJSON('/post/' + id + ".json");
+});
+
+Promise.all(promises).then(function (posts) {
+  // ...
+}).catch(function(reason){
+  // ...
+});
+```
