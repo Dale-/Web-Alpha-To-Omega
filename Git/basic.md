@@ -1,6 +1,10 @@
 ## create a new repository
  ```bash
   git init
+
+  git init [project-name]
+
+  git clone [url]
  ```
 
 ## add & commit
@@ -54,4 +58,16 @@
 ### rename branch name
 ```bash
   git branch (-m | -M) <oldbranch> <newbranch>
+```
+
+## tag
+
+## config
+```bash
+  git config --list
+
+  git config -e [--global]
+
+  git config [--global] user.name "[name]"
+  git config [--global] user.email "[email address]"
 ```
