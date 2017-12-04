@@ -62,6 +62,36 @@
 
 ## tag
 
+### list tags
+```bash
+  git tag
+```
+
+### delete local tag
+```bash
+  git tag -d [tag]
+```
+
+### delete remote tag
+```bash
+  git push origin :refs/tags/[tagName]
+```
+
+### show tag message
+```bash
+  git show [tag]
+```
+
+### push specific tag
+```bash
+  git push [remote] [tag]
+```
+
+### push all of tags
+```bash
+  git push [remote] --tags
+```
+
 ## config
 ```bash
   git config --list
