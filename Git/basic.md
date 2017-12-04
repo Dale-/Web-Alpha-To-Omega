@@ -44,9 +44,14 @@
 ### delete remote branch
 ```bash
   git push --delete origin <branchname>
+
+  or
+
+  git branch -d -r <branchname>
+  git push origin :<branchname>
 ```
 
 ### rename branch name
 ```bash
-  git branch -m <oldbranchname> <newbranchname>
+  git branch (-m | -M) <oldbranch> <newbranch>
 ```
