@@ -1,4 +1,4 @@
-## create a new repository
+# create a new repository
  ```bash
   git init
 
@@ -7,18 +7,18 @@
   git clone [url]
  ```
 
-## add & commit
+# add & commit
 ```bash
    git add <filename>
    git commit -m "Commit message"
 ```
 
-## pushing changes
+# pushing changes
 ```bash
   git push origin <branchname>
 ```
 
-## branching
+# branching
 
 ### show local branch
 ```bash
@@ -60,7 +60,7 @@
   git branch (-m | -M) <oldbranch> <newbranch>
 ```
 
-## tag
+# tag
 
 ### list tags
 ```bash
@@ -92,7 +92,7 @@
   git push [remote] --tags
 ```
 
-## config
+# config
 ```bash
   git config --list
 
