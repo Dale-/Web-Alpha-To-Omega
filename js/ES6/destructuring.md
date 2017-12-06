@@ -121,5 +121,20 @@
 ```
 
 ### 字符串的解构
+```javascript
+  const [a, b, c, d, e] = 'hello';
+  a // "h"
+  b // "e"
+  c // "l"
+  d // "l"
+  e // "o"
+```
+
+* 类似数组的对象都有一个length属性，因此还可以对这个属性解构赋值。
+```javascript
+  let {length : len} = 'hello';
+  len // 5
+```
+
 ### 数值和布尔的解构
 ### 函数参数的解构
