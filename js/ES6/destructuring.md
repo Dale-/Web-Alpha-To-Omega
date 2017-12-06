@@ -71,8 +71,55 @@
   let [x = y, y = 1] = [];     // ReferenceError
 ```
 
-
 ### 对象的解构
+```javascript
+  let { foo, bar } = { foo: "aaa", bar: "bbb" };
+  foo // "aaa"
+  bar // "bbb"
+```
+
+* 与数组一样，解构也可以用于嵌套结构的对象。
+```javascript
+  let obj = {
+    p: [
+      'Hello',
+      { y: 'World' }
+    ]
+  };
+
+  let { p: [x, { y }] } = obj;
+  x // "Hello"
+  y // "World"
+```
+
+* 对象的解构也可以指定默认值。
+```javascript
+  var {x = 3} = {};
+  x // 3
+
+  var {x, y = 5} = {x: 1};
+  x // 1
+  y // 5
+
+  var {x: y = 3} = {};
+  y // 3
+
+  var {x: y = 3} = {x: 5};
+  y // 5
+
+  var { message: msg = 'Something went wrong' } = {};
+  msg // "Something went wrong"
+```
+
+* 默认值生效的条件是，对象的属性值严格等于undefined。
+```javascript
+  var {x = 3} = {x: undefined};
+  x // 3
+
+  var {x = 3} = {x: null};
+  x // null
+```
+
 ### 字符串的解构
 ### 数值和布尔的解构
 ### 函数参数的解构
