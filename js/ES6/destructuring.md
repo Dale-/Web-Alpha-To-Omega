@@ -154,3 +154,42 @@
 ```
 
 ### 函数参数的解构
+
+```javascript
+  function add([x, y]){
+    return x + y;
+  }
+
+  add([1, 2]); // 3
+
+  [[1, 2], [3, 4]].map(([a, b]) => a + b);
+  // [ 3, 7 ]
+
+```
+
+* 函数参数的解构也可以使用默认值。
+```javascript
+  function move({x = 0, y = 0} = {}) {
+    return [x, y];
+  }
+
+  move({x: 3, y: 8}); // [3, 8]
+  move({x: 3}); // [3, 0]
+  move({}); // [0, 0]
+  move(); // [0, 0]
+```
+
+上面代码中，函数move的参数是一个对象，通过对这个对象进行解构，得到变量x和y的值。如果解构失败，x和y等于默认值。
+
+```javascript
+  function move({x, y} = { x: 0, y: 0 }) {
+    return [x, y];
+  }
+
+  move({x: 3, y: 8}); // [3, 8]
+  move({x: 3}); // [3, undefined]
+  move({}); // [undefined, undefined]
+  move(); // [0, 0]
+```
+
+上面代码是为函数move的参数指定默认值，而不是为变量x和y指定默认值，所以会得到与前一种写法不同的结果。
