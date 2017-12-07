@@ -137,4 +137,20 @@
 ```
 
 ### 数值和布尔的解构
+
+* 解构赋值时，如果等号右边是数值和布尔值，则会先转为对象。
+
+```javascript
+  let {toString: s} = 123;
+  s === Number.prototype.toString // true
+
+  let {toString: s} = true;
+  s === Boolean.prototype.toString // true
+```
+
+```javascript
+  let { prop: x } = undefined; // TypeError
+  let { prop: y } = null; // TypeError
+```
+
 ### 函数参数的解构
