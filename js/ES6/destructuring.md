@@ -193,3 +193,32 @@
 ```
 
 上面代码是为函数move的参数指定默认值，而不是为变量x和y指定默认值，所以会得到与前一种写法不同的结果。
+
+## 用途
+### 交换变量的值
+```javascript
+  let x = 1;
+  let y = 2;
+
+  [x, y] = [y, x];
+```
+
+### 从函数返回多个值
+```javascript
+  // 返回一个数组
+
+  function example() {
+    return [1, 2, 3];
+  }
+  let [a, b, c] = example();
+
+  // 返回一个对象
+
+  function example() {
+    return {
+      foo: 1,
+      bar: 2
+    };
+  }
+  let { foo, bar } = example();
+```
