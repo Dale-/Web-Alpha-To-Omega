@@ -234,3 +234,32 @@
   function f({x, y, z}) { ... }
   f({z: 3, y: 2, x: 1});
 ```
+
+### 提取 JSON 数据
+```javascript
+  let jsonData = {
+    id: 42,
+    status: "OK",
+    data: [867, 5309]
+  };
+
+  let { id, status, data: number } = jsonData;
+
+  console.log(id, status, number);
+  // 42, "OK", [867, 5309]
+```
+
+### 函数参数的默认值
+```javascript
+  jQuery.ajax = function (url, {
+    async = true,
+    beforeSend = function () {},
+    cache = true,
+    complete = function () {},
+    crossDomain = false,
+    global = true,
+    // ... more config
+  }) {
+    // ... do stuff
+  };
+```
