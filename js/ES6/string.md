@@ -85,3 +85,19 @@
   'xxx'.padStart(2, 'ab') // 'xxx'
   'xxx'.padEnd(2, 'ab') // 'xxx'
 ```
+
+### 模板字符串
+```javascript
+  $('#result').append(
+    'There are <b>' + basket.count + '</b> ' +
+    'items in your basket, ' +
+    '<em>' + basket.onSale +
+    '</em> are on sale!'
+  );
+
+  $('#result').append(`
+    There are <b>${basket.count}</b> items
+     in your basket, <em>${basket.onSale}</em>
+    are on sale!
+  `);
+```
