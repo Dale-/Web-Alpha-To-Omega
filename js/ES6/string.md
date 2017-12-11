@@ -101,3 +101,19 @@
     are on sale!
   `);
 ```
+
+### 标签模板
+```javascript
+  alert`123`
+  // 等同于
+  alert(123)
+```
+
+```javascript
+  let a = 5;
+  let b = 10;
+
+  tag`Hello ${ a + b } world ${ a * b }`;
+  // 等同于
+  tag(['Hello ', ' world ', ''], 15, 50);
+```
