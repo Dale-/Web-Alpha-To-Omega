@@ -42,3 +42,33 @@
   s.endsWith('Hello', 5) // true
   s.includes('Hello', 6) // false
 ```
+
+### repeat()
+
+* repeat方法返回一个新字符串，表示将原字符串重复n次。
+```javascript
+  'x'.repeat(3) // "xxx"
+  'hello'.repeat(2) // "hellohello"
+  'na'.repeat(0) // ""
+```
+
+* 参数如果是小数，会被取整。
+```javascript
+  'na'.repeat(2.9) // "nana"
+```
+
+* 如果repeat的参数是负数或者Infinity，会报错。
+```javascript
+  'na'.repeat(Infinity)
+  // RangeError
+  'na'.repeat(-1)
+  // RangeError
+```
+
+```javascript
+  'na'.repeat(-0.9) // ""
+  'na'.repeat(NaN) // ""
+
+  'na'.repeat('na') // ""
+  'na'.repeat('3') // "nanana"
+```
