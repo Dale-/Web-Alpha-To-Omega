@@ -72,3 +72,16 @@
   'na'.repeat('na') // ""
   'na'.repeat('3') // "nanana"
 ```
+
+### padStart()，padEnd()
+
+```javascript
+  'x'.padStart(5, 'ab') // 'ababx'
+  'x'.padStart(4, 'ab') // 'abax'
+
+  'x'.padEnd(5, 'ab') // 'xabab'
+  'x'.padEnd(4, 'ab') // 'xaba'
+
+  'xxx'.padStart(2, 'ab') // 'xxx'
+  'xxx'.padEnd(2, 'ab') // 'xxx'
+```
