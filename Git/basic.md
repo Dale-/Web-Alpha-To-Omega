@@ -20,32 +20,32 @@
 
 # branching
 
-### show local branch
+### 1. show local branch
 ```bash
   git branch
 ```
 
-### show remote branch
+### 2. show remote branch
 ```bash
   git branch -r
 ```
 
-### create a new branch
+### 3. create a new branch
 ```bash
   git checkout -b <branchname>
 ```
 
-### switch branch
+### 4. switch branch
 ```bash
   git checkout <branchname>
 ```
 
-### delete branch
+### 5. delete branch
 ```bash
   git branch  (-d | -D) <branchname>
 ```
 
-### delete remote branch
+### 6. delete remote branch
 ```bash
   git push --delete origin <branchname>
 
@@ -55,39 +55,39 @@
   git push origin :<branchname>
 ```
 
-### rename branch name
+### 7. rename branch name
 ```bash
   git branch (-m | -M) <oldbranch> <newbranch>
 ```
 
 # tag
 
-### list tags
+### 1. list tags
 ```bash
   git tag
 ```
 
-### delete local tag
+### 2. delete local tag
 ```bash
   git tag -d [tag]
 ```
 
-### delete remote tag
+### 3. delete remote tag
 ```bash
   git push origin :refs/tags/[tagName]
 ```
 
-### show tag message
+### 4. show tag message
 ```bash
   git show [tag]
 ```
 
-### push specific tag
+### 5. push specific tag
 ```bash
   git push [remote] [tag]
 ```
 
-### push all of tags
+### 6. push all of tags
 ```bash
   git push [remote] --tags
 ```
