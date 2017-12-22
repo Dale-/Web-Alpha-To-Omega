@@ -53,7 +53,7 @@
 * Standard [[Entry]](http://codeguide.bootcss.com/)
 * CSS3 [[Entry]](https://www.ibm.com/developerworks/cn/web/1202_zhouxiang_css3/)
 
-![](/img/css/css-xmind.png)
+![](/source/img/css/css-xmind.png)
 
 ### JavaScript Basic
 
@@ -63,7 +63,7 @@
 * [ES6](https://github.com/Dale-/Web-Alpha-To-Omega/blob/master/js/ES6/es6.md): let、const、变量的解构、[字符串的扩展](https://github.com/Dale-/Web-Alpha-To-Omega/blob/master/js/ES6/string.md)、正则的扩展、数值的扩展、函数的扩展、[数组的扩展]((https://github.com/Dale-/Web-Alpha-To-Omega/blob/master/js/ES6/array-es6.md))、对象的扩展、Symbol、Set Map、[Promise](https://github.com/Dale-/Web-Alpha-To-Omega/blob/master/js/ES6/promise.md)、Class、inherit [[Entry]](http://es6.ruanyifeng.com/)
 * Server: DOM、BOM、事件处理、客户端存储
 
-![](/img/javascript/javascript-xmind.png)
+![](/source/img/javascript/javascript-xmind.png)
 
 ### TeamWork
 
