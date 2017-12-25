@@ -60,7 +60,7 @@
 * syntax: 数据类型、数值、变量、表达式、运算符和语句
 * Standards: Object、Array、Boolean、Number、String、Math、Date、RegExp、JSON [[Entry]](http://javascript.ruanyifeng.com/stdlib/object.html#)
 * OO: [this](https://dale-.github.io/2017/05/28/Understand-JavaScript%E2%80%99s-%E2%80%9Cthis%E2%80%9D/)、prototype、class、inherit
-* [ES6](https://github.com/Dale-/Web-Alpha-To-Omega/blob/master/javascript/ES6/es6.md): let、const、变量的解构、[字符串的扩展](https://github.com/Dale-/Web-Alpha-To-Omega/javascript/ES6/string.md)、正则的扩展、数值的扩展、函数的扩展、[数组的扩展]((https://github.com/Dale-/Web-Alpha-To-Omega/javascript/ES6/array-es6.md))、对象的扩展、Symbol、Set Map、[Promise](https://github.com/Dale-/Web-Alpha-To-Omega/javascript/ES6/promise.md)、Class、inherit [[Entry]](http://es6.ruanyifeng.com/)
+* [ES6](https://github.com/Dale-/Web-Alpha-To-Omega/blob/master/javascript/ES6/es6.md): let、const、[变量的解构](https://github.com/Dale-/Web-Alpha-To-Omega/blob/master/javascript/es6/destructuring.md)、[字符串的扩展](https://github.com/Dale-/Web-Alpha-To-Omega/blob/master/javascript/es6/string.md)、正则的扩展、数值的扩展、函数的扩展、[数组的扩展](https://github.com/Dale-/Web-Alpha-To-Omega/blob/master/javascript/es6/array.md)、对象的扩展、Symbol、Set Map、[Promise](https://github.com/Dale-/Web-Alpha-To-Omega/blob/master/javascript/es6/promise.md)、Class、inherit [[Entry]](http://es6.ruanyifeng.com/)
 * Server: DOM、BOM、事件处理、客户端存储
 
 ![](/source/img/javascript/javascript-xmind.png)
