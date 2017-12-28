@@ -22,6 +22,39 @@ const promise = new Promise(function(resolve, reject) {
 });
 ```
 
+> 下面是一个Promise对象的简单例子
+
+```javascript
+function timeout(ms) {
+  return new Promise((resolve, reject) => {
+    setTimeout(resolve, ms, 'done');
+  });
+}
+
+timeout(100).then((value) => {
+  console.log(value);
+});
+```
+
+> Promise 新建后就会立即执行
+
+```javascript
+let promise = new Promise(function(resolve, reject) {
+  console.log('Promise');
+  resolve();
+});
+
+promise.then(function() {
+  console.log('resolved.');
+});
+
+console.log('Hi!');
+
+// Promise
+// Hi!
+// resolved
+```
+
 ### Promise.prototype.then()
 ```javascript
 getJSON("/post/1.json").then(function(post) {
