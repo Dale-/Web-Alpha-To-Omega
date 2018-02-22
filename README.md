@@ -13,7 +13,7 @@
 
 #### Short Cut
 
- * IDE
+ * IDE [[ATOM]](https://github.com/Dale-/Web-Alpha-To-Omega/blob/master/shortcut/atom.md)
  * Operation System [[MAC]](https://support.apple.com/zh-cn/HT201236)
  * Chrome DevTools [[Entry]](https://developers.google.com/web/tools/chrome-devtools/shortcuts)
 
