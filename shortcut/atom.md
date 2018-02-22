@@ -48,6 +48,7 @@
 
 ### 创建
 `a` 快速创建文件(current directory)
+`shift-a` 快速创建文件夹(current directory)
 
 ---
 
