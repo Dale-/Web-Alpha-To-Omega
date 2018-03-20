@@ -98,5 +98,5 @@
 ### Book Sources
 
 ### API Query Language
-* GraphQL
+* GraphQL [Simple Demo](https://github.com/Dale-/GraphQL-Demo)
 * RESTful
