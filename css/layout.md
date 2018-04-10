@@ -13,3 +13,7 @@
 ![](/source/img/css/layout/css-model.png)
 
 此外，每个区域都有其特定的作用：Content area，是当前元素用来容纳所有子孙元素；Padding area，是当前元素用来隔离自身和子孙元素；Border area是当前元素用来显示自身的轮廓；Margin area，是当前元素用来隔离自身和相邻元素。理解每个区域的作用和职责至关重要，有助于我们写出优雅、清晰的布局代码。
+
+> box-sizing (CSS3属性)
+
+### 1. box-sizing的作用
