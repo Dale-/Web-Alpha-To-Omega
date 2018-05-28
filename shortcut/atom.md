@@ -23,6 +23,17 @@
 ### Markdown预览
 `ctrl-shift-M` Markdown预览
 
+### 编辑和删除文本
+
+* 基本操作
+`ctrl-T` 使光标前后字符交换
+`cmd-J` 将下一行与当前行合并
+`ctrl-cmd-up`, `ctrl-cmd-down` 使当前行向上或者向下移动
+`cmd-shift-D` 复制当前行到下一行
+
+* 多光标和多处选取
+`cmd-click` 增加新光标
+
 ### 选取
 `cmd-shift-D` 复制一行代码
 `ctrl-shift-P`  选取至上一行  
