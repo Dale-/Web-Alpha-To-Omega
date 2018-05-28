@@ -86,3 +86,13 @@
 
 ### js-hyperclick
 > 首先安装`hyperclick`, 实现按住command + 单击跳转到函数定义处或引入文件。再安装你所用的x-hyperclick，比如我用js，就安装js-hyperclick，其他语言同理。如果需要支持非本文件内的跳转，需要安装[goto-definition](https://github.com/faceair/atom-goto-definition)
+
+### 代码提示
+
+* atom-ternjs js代码提示很强大，高度定制化
+* docblockr jsdoc 给js添加注释
+* autoclose-html 闭合html标签
+* color-picker 取色器（必备插件）
+* pigments 颜色显示插件 （必装）
+* terminal-panel 直接在atom里面写命令了
+* svg-preview svg预览
