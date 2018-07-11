@@ -72,6 +72,7 @@
   * [TeamWork](http://nvie.com/posts/a-successful-git-branching-model/)
 * RESTful [[Entry]](https://codeplanet.io/principles-good-restful-api-design/)
 * JS standard[[ESLint]](http://eslint.org/docs/user-guide/getting-started)
+* [Code Style](https://github.com/Dale-/Web-Alpha-To-Omega/blob/master/code-style/javascript.md)
 
 ### 工程化
 
