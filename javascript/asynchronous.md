@@ -8,7 +8,13 @@
 
 ### 解决方案
 
-- Async.js
-- Promise
-- Generator
-- ES7的async/await
+* ES5
+  - 回调函数
+  - 事件监听(事件发布/订阅)
+
+* ES6
+  - Promise
+  - Generator
+
+* ES7
+  - async/await
