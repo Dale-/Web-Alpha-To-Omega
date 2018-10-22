@@ -7,7 +7,7 @@
 #### Dev Environment
 
  * [Atom](https://atom.io/)
-    * [打造高效的Atom开发环境](https://github.com/Dale-/Web-Alpha-To-Omega/blob/master/shortcut/atom.md)
+    * [Efficient develop Environment](https://github.com/Dale-/Web-Alpha-To-Omega/blob/master/shortcut/atom.md)
  * [WebStorm](https://www.jetbrains.com/webstorm/)
  * [Sublime](http://www.sublimetext.com/)
 
@@ -57,11 +57,11 @@
 
 ### JavaScript Basic
 
-* syntax: 数据类型、数值、变量、表达式、运算符和语句
+* syntax: Data Type、Numerical Value、Variable、Expression、Operator and Statement
 * Standards: Object、Array、Boolean、Number、String、Math、Date、RegExp、JSON [[Entry]](http://javascript.ruanyifeng.com/stdlib/object.html#)
 * OO: [this](https://dale-.github.io/2017/05/28/Understand-JavaScript%E2%80%99s-%E2%80%9Cthis%E2%80%9D/)、prototype、class、inherit
 * [ES6](https://github.com/Dale-/Web-Alpha-To-Omega/blob/master/javascript/ES6/es6.md): let、const、[变量的解构](https://github.com/Dale-/Web-Alpha-To-Omega/blob/master/javascript/es6/destructuring.md)、[字符串的扩展](https://github.com/Dale-/Web-Alpha-To-Omega/blob/master/javascript/es6/string.md)、[正则的扩展]((https://github.com/Dale-/Web-Alpha-To-Omega/blob/master/javascript/es6/regular-expression.md))、[数值的扩展]((https://github.com/Dale-/Web-Alpha-To-Omega/blob/master/javascript/es6/number.md))、[函数的扩展]((https://github.com/Dale-/Web-Alpha-To-Omega/blob/master/javascript/es6/function.md))、[数组的扩展](https://github.com/Dale-/Web-Alpha-To-Omega/blob/master/javascript/es6/array.md)、[对象的扩展]((https://github.com/Dale-/Web-Alpha-To-Omega/blob/master/javascript/es6/object.md))、[Symbol]((https://github.com/Dale-/Web-Alpha-To-Omega/blob/master/javascript/es6/symbol.md))、[Set Map]((https://github.com/Dale-/Web-Alpha-To-Omega/blob/master/javascript/es6/set-map.md))、[Promise](https://github.com/Dale-/Web-Alpha-To-Omega/blob/master/javascript/es6/promise.md)、[Class]((https://github.com/Dale-/Web-Alpha-To-Omega/blob/master/javascript/es6/class.md))、inherit [[Entry]](http://es6.ruanyifeng.com/)
-* Server: DOM、BOM、事件处理、客户端存储
+* Server: DOM、BOM、Event Handling、Client Storage
 
 ![](/source/img/javascript/javascript-xmind.png)
 
