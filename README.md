@@ -44,6 +44,10 @@
 
 ## Basic Info
 
+### HTML5
+* Web Storage
+
+
 ### CSS Basic
 
 * Layout [[Entry]](http://learnlayout.com/)
