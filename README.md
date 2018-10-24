@@ -44,9 +44,10 @@
 
 ## Basic Info
 
-### HTML5
+### [HTML5]((https://github.com/Dale-/Web-Alpha-To-Omega/blob/master/html/html5.md))
 * Web Storage
-
+* Removed Element
+* Added Element
 
 ### CSS Basic
 
