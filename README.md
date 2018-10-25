@@ -87,6 +87,11 @@
   * [WebPack](https://webpack.js.org/)
 * 自动构建脚本
 
+### Algorithm
+* sort
+
+### Design Patterns
+
 ### Testing
 
 * Unit Testing
