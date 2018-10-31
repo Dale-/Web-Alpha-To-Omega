@@ -25,23 +25,6 @@
  * [git](http://www.git-scm.com)
  * [Webpack](http://webpack.github.io/)
 
-#### Chrome Plugin
-
-  * [Octotree](https://chrome.google.com/webstore/search/Octotree?utm_source=chrome-ntp-icon)
-  * [Momentum](https://chrome.google.com/webstore/search/Momentum?utm_source=chrome-ntp-icon)
-  * [Extension Manager](https://chrome.google.com/webstore/detail/extension-manager/gjldcdngmdknpinoemndlidpcabkggco/related)
-  *  Front End
-     * [Redux](https://chrome.google.com/webstore/search/Redux?utm_source=chrome-ntp-icon)
-     * Angular Scope Inspector
-
-#### Common App
-
-  * [X-mind](http://www.xmind.net/)
-  * [Evernote](https://evernote.com/)
-  * [iTerm2](https://iterm2.com/)
-    * [Shortcut](https://github.com/Dale-/Web-Alpha-To-Omega/blob/master/shortcut/iterm.md)
-  * [Postman](https://www.getpostman.com/)  
-
 ## Basic Info
 
 ### [HTML5]((https://github.com/Dale-/Web-Alpha-To-Omega/blob/master/html/html5.md))
@@ -79,6 +62,14 @@
 * JS standard[[ESLint]](http://eslint.org/docs/user-guide/getting-started)
 * [Code Style](https://github.com/Dale-/Web-Alpha-To-Omega/blob/master/code-style/javascript.md)
 
+#### Common App
+
+  * [X-mind](http://www.xmind.net/)
+  * [Evernote](https://evernote.com/)
+  * [iTerm2](https://iterm2.com/)
+    * [Shortcut](https://github.com/Dale-/Web-Alpha-To-Omega/blob/master/shortcut/iterm.md)
+  * [Postman](https://www.getpostman.com/)  
+
 ### 工程化
 
 * 构建系统
@@ -108,8 +99,18 @@
 
 ### Book Sources
 
+#### Chrome Plugin
+
+* [Octotree](https://chrome.google.com/webstore/search/Octotree?utm_source=chrome-ntp-icon)
+* [Momentum](https://chrome.google.com/webstore/search/Momentum?utm_source=chrome-ntp-icon)
+* [Extension Manager](https://chrome.google.com/webstore/detail/extension-manager/gjldcdngmdknpinoemndlidpcabkggco/related)
+*  Front End
+   * [Redux](https://chrome.google.com/webstore/search/Redux?utm_source=chrome-ntp-icon)
+   * Angular Scope Inspector
+
 ### Tools
 * Carbon: Create and share beautiful images of your source code
+* Chrome Developer Tools
 
 ### API Query Language
 * GraphQL [Simple Demo](https://github.com/Dale-/GraphQL-Demo)
