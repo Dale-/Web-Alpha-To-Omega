@@ -114,7 +114,7 @@
    * Angular Scope Inspector
 
 ### Tools
-* Carbon: Create and share beautiful images of your source code
+* [Carbon](https://carbon.now.sh): Create and share beautiful images of your source code
 * Chrome Developer Tools
 
 ### API Query Language
