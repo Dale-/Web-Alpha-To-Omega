@@ -7,8 +7,9 @@
 #### Dev Environment
 
  * [Atom](https://atom.io/)
-    * [Efficient develop Environment](https://github.com/Dale-/Web-Alpha-To-Omega/blob/master/shortcut/atom.md)
+    * [Efficient develop Environment](https://github.com/Dale-/Web-Alpha-To-Omega/blob/master/shortcut/atom.md)    
  * [WebStorm](https://www.jetbrains.com/webstorm/)
+ * [VS Code](https://code.visualstudio.com/)
  * [Sublime](http://www.sublimetext.com/)
 
 #### Short Cut
