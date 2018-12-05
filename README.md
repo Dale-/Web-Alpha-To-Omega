@@ -118,9 +118,15 @@
 ### Tools
 * [Carbon](https://carbon.now.sh): Create and share beautiful images of your source code
 * Chrome Developer Tools
+* [Postman](https://www.getpostman.com/)
 
 ### API Query Language
 * GraphQL [Simple Demo](https://github.com/Dale-/GraphQL-Demo)
 * RESTful
 
 ### Mini Program
+
+### Standard
+* commit message
+* code-Style
+* ESlint
