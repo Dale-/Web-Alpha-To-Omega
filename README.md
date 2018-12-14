@@ -130,3 +130,6 @@
 * commit message
 * code-Style
 * ESlint
+
+### Performance
+* Lighthouse
