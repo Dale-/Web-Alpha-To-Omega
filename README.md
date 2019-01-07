@@ -136,3 +136,6 @@
 * lightHouse
 * New Relic
 * DataDog
+
+### Virtual Sevices
+* genymotion
