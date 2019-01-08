@@ -259,8 +259,6 @@
      <a name="semantization-magic-number"></a><a name="4.1"></a>
   - [4.3](#semantization-reduce-item) Add key for every object
 
-    > Avoid use magic number, Please give it more semantic variable.
-
     ```javascript
 
     // bad
@@ -300,7 +298,7 @@
     ].map(provider => Object.assign({}, provider, {
       isValid,
       getUnsupportedTargets
-}));
+    }));
     ```
 ## ES6    
 <a name="es6-array-includes"></a><a name="5.1"></a>
