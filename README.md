@@ -132,6 +132,8 @@
 * ESlint
 
 ### Performance
+> React performance
+  * Improve render performance
 > detection tools
 * lightHouse
 * New Relic
