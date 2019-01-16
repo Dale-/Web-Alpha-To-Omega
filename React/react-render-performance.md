@@ -83,17 +83,19 @@ React 15.4.0引入了性能时间轴的功能，可以更直观的了解可视�
 
 > Out
 ```javascript
-babelHelpers.jsx(Baz, {
-    foo: "bar"
-}, "1");
+    babelHelpers.jsx(Baz, {
+        foo: "bar"
+    }, "1");
+
+    /**
+    * Instead of
+    * 
+    * React.createElement(Baz, {
+    *   foo: "bar",
+    *   key: "1",
+    * });
+    * /
 ```
 
-/**
- * Instead of
- * 
- * React.createElement(Baz, {
- *   foo: "bar",
- *   key: "1",
- * });
- * /  
+  
 
