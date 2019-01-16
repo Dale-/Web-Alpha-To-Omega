@@ -21,15 +21,7 @@ why-did-you-update是一个可以检测到潜在不必要的组件渲染的库�
 
 > Usage
 
-```javascript
-import React from 'react';
-
-if (process.env.NODE_ENV !== 'production') {
-  const {whyDidYouUpdate} = require('why-did-you-update');
-  whyDidYouUpdate(React);
-}
-
-```
+![](/source/img/javascript/why-did-you-update-usage.png)
 
 More Options please click [why-did-you-update](https://github.com/maicki/why-did-you-update)
 
