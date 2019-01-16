@@ -96,6 +96,29 @@ React 15.4.0引入了性能时间轴的功能，可以更直观的了解可视�
     }
 ```
 
-### Immutable
-
 ### plugin-transform-react-inline-elements
+[(Reference)Optimizing Compiler: Inline React Elements](https://github.com/facebook/react/issues/3228)
+
+在production环境，优化`React.createElement` function为`babelHelpers.jsx`
+
+> In
+```javascript
+    <Baz foo="bar" key="1"></Baz>
+```
+
+> Out
+```javascript
+babelHelpers.jsx(Baz, {
+    foo: "bar"
+}, "1");
+```
+
+/**
+ * Instead of
+ * 
+ * React.createElement(Baz, {
+ *   foo: "bar",
+ *   key: "1",
+ * });
+ * /  
+
