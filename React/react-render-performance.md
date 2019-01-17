@@ -13,7 +13,6 @@ React不直接操作真实DOM，它在内部维护了一套快速相应的虚拟
 
 why-did-you-update是一个可以检测到潜在不必要的组件渲染的库。当发生比必要的更新时，它会检测到组件的render方法何时被调用，并反应到控制台。
 
-
 ![](/source/img/javascript/why-did-you-update.png)
 
 > Setup
