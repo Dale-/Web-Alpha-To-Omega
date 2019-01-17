@@ -1,9 +1,12 @@
-## React原理
-### React 生命周期
-### React DIFF DOM
-### React render
+## React渲染机制
 React不直接操作真实DOM，它在内部维护了一套快速相应的虚拟DOM(本篇文章简称为VDOM)，`render`方法返回一个VDOM的描述，React会在reconsilation之后最小化的进行VDOM的更新，最终patch到真实的DOM。
 ![](/source/img/javascript/react-render.png)
+![](/source/img/javascript/react-update.png)
+
+> 通过官网给出的React组件渲染机制我们可以发现，性能优化的两个着手点：`shouldComponentUpdate`和 `DOM DIFF`的结果。
+
+* shouldComponentUpdate阶段，如果props与state与上一次相同，这个时候可以中断后续的生成虚拟DOM以及DOM DIFF的过程。
+* 提高DOM DIFF的效率
 
 ## 性能检测工具
 ### Why-did-you-update
@@ -42,6 +45,8 @@ React 15.4.0引入了性能时间轴的功能，可以更直观的了解可视�
 
 ![](/source/img/javascript/react_perf.png)
 
+*这些数字是相对的，因此组件在生产版本中会运行更快*。然而，这也能够帮助你了解何时会有无关的组件被错误的更新，以及你的组件更新的深度和频率。
+
 ### React.addons.Rerf
 
 ## 优化方法
@@ -71,6 +76,8 @@ React 15.4.0引入了性能时间轴的功能，可以更直观的了解可视�
 
 `shouldComponentUpdate`是`props`或`state`更改后、render前被调用的方法。如果`shouldComponentUpdate`返回`true`，`render`将被调用，如果它返回`false`，则组件不会重新渲染。
 
+所以在一些情况下，你可以通过重写这个生命周期函数`shouldComponentUpdate`来提升渲染效率。这个函数默认返回`true`。如果你知道在某些情况下你的组件不需要更新，你可以在`shouldComponentUpdate`内返回`false`来跳过整个渲染进程。
+
 ![](/source/img/javascript/should-component-update.png)
 
 ### plugin-transform-react-inline-elements
@@ -98,6 +105,12 @@ React 15.4.0引入了性能时间轴的功能，可以更直观的了解可视�
     * });
     * /
 ```
+
+### 使用稳定的 `key`
+
+> 唯一的
+> 稳定的
+> 可预测的
 
   
 
