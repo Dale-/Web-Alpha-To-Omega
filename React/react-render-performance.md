@@ -66,7 +66,13 @@ React 15.4.0引入了性能时间轴的功能，可以更直观的了解可视�
 > 使用方法
 
 将原组件继承自React.Component,替换为React.PureComponent
-![](/source/img/javascript/pure-component.png)
+<figure class="video_container">
+    <iframe
+    src="https://carbon.now.sh/embed/?bg=rgba(171%2C%20184%2C%20195%2C%201)&t=seti&wt=none&l=javascript&ds=false&dsyoff=9px&dsblur=88px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fm=Hack&fs=14px&lh=133%25&si=false&code=import%2520React%252C%2520%257B%2520PureComponent%2520%257D%2520from%2520'react'%250A%250Aclass%2520Foo%2520extends%2520PureComponent%2520%257B%250A%2520%2520%2520%2520render()%2520%257B%250A%2520%2520%2520%2520%2520%2520%2520%2520%252F%252F%2520...%250A%2520%2520%2520%2520%257D%250A%257D%250A%250Aexport%2520default%2520Foo%253B&es=2x&wm=false"
+    style="transform:scale(0.7); width:1024px; height:473px; border:0; overflow:hidden;"
+    sandbox="allow-scripts allow-same-origin">
+    </iframe>
+</figure>
 
 ### 实现 shouldComponentUpdate
 我们知道`PureComponent`的`shadowEqual`只会浅检查组件的`props`和`state`,所以嵌套对象和数组是不会被比较的。所以如果是需要深比较，我们也可以使用`shouldComponentUpdate`来手动单个比较是否需要重新渲染。
@@ -75,7 +81,13 @@ React 15.4.0引入了性能时间轴的功能，可以更直观的了解可视�
 
 所以在一些情况下，你可以通过重写这个生命周期函数`shouldComponentUpdate`来提升渲染效率。这个函数默认返回`true`。如果你知道在某些情况下你的组件不需要更新，你可以在`shouldComponentUpdate`内返回`false`来跳过整个渲染进程。
 
-![](/source/img/javascript/should-component-update.png)
+```javascript
+shouldComponetUpdate(nextProps, nextState) {
+  if (/* do some compare*/) {
+      reture true;
+  }  
+}
+```
 
 ### plugin-transform-react-inline-elements
 [(Reference)Optimizing Compiler: Inline React Elements](https://github.com/facebook/react/issues/3228)
