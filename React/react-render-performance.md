@@ -2,6 +2,8 @@
 ### React 生命周期
 ### React DIFF DOM
 ### React render
+React不直接操作真实DOM，它在内部维护了一套快速相应的虚拟DOM(本篇文章简称为VDOM)，`render`方法返回一个VDOM的描述，React会在reconsilation之后最小化的进行VDOM的更新，最终patch到真实的DOM。
+![](/source/img/javascript/react-render.png)
 
 ## 性能检测工具
 ### Why-did-you-update
