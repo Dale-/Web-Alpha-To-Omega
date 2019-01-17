@@ -1,9 +1,12 @@
 ## React渲染机制
 React不直接操作真实DOM，它在内部维护了一套快速相应的虚拟DOM(本篇文章简称为VDOM)，`render`方法返回一个VDOM的描述，React会在reconsilation之后最小化的进行VDOM的更新，最终patch到真实的DOM。
-![](/source/img/javascript/react-render.png)
+
+下面官网给出的React组件渲染机制描述图
 ![](/source/img/javascript/react-update.png)
 
-> 通过官网给出的React组件渲染机制我们可以发现，性能优化的两个着手点：`shouldComponentUpdate`和 `DOM DIFF`的结果。
+![](/source/img/javascript/react-render-flow.png)
+
+通过上述流程图，再对比渲染机制描述图我们可以发现，性能优化的两个着手点：`shouldComponentUpdate`和 `DOM DIFF`的结果。
 
 * shouldComponentUpdate阶段，如果props与state与上一次相同，这个时候可以中断后续的生成虚拟DOM以及DOM DIFF的过程。
 * 提高DOM DIFF的效率
@@ -67,11 +70,7 @@ React 15.4.0引入了性能时间轴的功能，可以更直观的了解可视�
 
 将原组件继承自React.Component,替换为React.PureComponent
 
-<iframe
-src="https://carbon.now.sh/embed/?bg=rgba(171%2C%20184%2C%20195%2C%201)&amp;amp;t=seti&amp;amp;wt=none&amp;l=javascript&amp;ds=false&amp;dsyoff=9px&amp;dsblur=88px&amp;wc=true&amp;wa=false&amp;pv=0px&amp;ph=0px&amp;ln=false&amp;fm=Hack&amp;fs=14px&amp;lh=133%25&amp;si=false&amp;code=import%2520React%252C%2520%257B%2520PureComponent%2520%257D%2520from%2520'react'%250A%250Aclass%2520Foo%2520extends%2520PureComponent%2520%257B%250A%2520%2520%2520%2520render()%2520%257B%250A%2520%2520%2520%2520%2520%2520%2520%2520%252F%252F%2520...%250A%2520%2520%2520%2520%257D%250A%257D%250A%250Aexport%2520default%2520Foo%253B&amp;es=2x&amp;wm=false"
-style="transform:scale(0.7); width:1024px; height:473px; border:0; overflow:hidden;"
-sandbox="allow-scripts allow-same-origin">
-</iframe>
+![](/source/img/javascript/pure-component.png)
 
 ### 实现 shouldComponentUpdate
 我们知道`PureComponent`的`shadowEqual`只会浅检查组件的`props`和`state`,所以嵌套对象和数组是不会被比较的。所以如果是需要深比较，我们也可以使用`shouldComponentUpdate`来手动单个比较是否需要重新渲染。
@@ -106,12 +105,13 @@ shouldComponetUpdate(nextProps, nextState) {
 
     /**
     * Instead of
-    *
-    * React.createElement(Baz, {
-    *   foo: "bar",
-    *   key: "1",
-    * });
-    * /
+    */
+
+    React.createElement(Baz, {
+      foo: "bar",
+      key: "1",
+    });
+
 ```
 
 ### 使用稳定的 `key`
