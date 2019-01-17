@@ -25,14 +25,21 @@ why-did-you-update是一个可以检测到潜在不必要的组件渲染的库�
 > Setup
 
 ```javascript
-    npm install --save why-did-you-update
-    or
-    yarn add why-did-you-update
+  npm install --save why-did-you-update
+  or
+  yarn add why-did-you-update
 ```
 
 > Usage
 
-![](/source/img/javascript/usage-of-why-did-you-update.png)
+```javascript
+  import React from 'react';
+
+  if (process.env.NODE_ENV !== 'production') {
+    const {whyDidYouUpdate} = require('why-did-you-update');
+    whyDidYouUpdate(React);
+  }
+```
 
 More Options please click [why-did-you-update](https://github.com/maicki/why-did-you-update)
 
@@ -69,67 +76,67 @@ React 官方文档里推荐的性能检测方法，是对 Chrome Devtool 的加�
 
 下面是PureComponent对比`props`和`state`的浅比较
 ```JavaScript
-if (this._compositeType === CompositeTypes.PureClass) {
-  shouldUpdate = !shallowEqual(prevProps, nextProps) || ! shallowEqual(inst.state, nextState);
-}
+  if (this._compositeType === CompositeTypes.PureClass) {
+    shouldUpdate = !shallowEqual(prevProps, nextProps) || ! shallowEqual(inst.state, nextState);
+  }
 ```
 
 下面是shallowEqual的源码
 ```javascript
-'use strict';
+  'use strict';
 
-const hasOwnProperty = Object.prototype.hasOwnProperty;
+  const hasOwnProperty = Object.prototype.hasOwnProperty;
 
-/**
- * inlined Object.is polyfill to avoid requiring consumers ship their own
- * https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/is
- */
-function is(x: mixed, y: mixed): boolean {
-  // SameValue algorithm
-  if (x === y) { // Steps 1-5, 7-10
-    // Steps 6.b-6.e: +0 != -0
-    // Added the nonzero y check to make Flow happy, but it is redundant
-    return x !== 0 || y !== 0 || 1 / x === 1 / y;
-  } else {
-    // Step 6.a: NaN == NaN
-    return x !== x && y !== y;
-  }
-}
-/**
- * Performs equality by iterating through keys on an object and returning false
- * when any key has values which are not strictly equal between the arguments.
- * Returns true when the values of all keys are strictly equal.
- */
-function shallowEqual(objA: mixed, objB: mixed): boolean {
-  if (is(objA, objB)) { // 如果 ===，返回 true
-    return true;
-  }
-
-
-  if (typeof objA !== 'object' || objA === null ||
-      typeof objB !== 'object' || objB === null) {
-    return false;
-  }
-
-  const keysA = Object.keys(objA);
-  const keysB = Object.keys(objB);
-
-  if (keysA.length !== keysB.length) {
-    return false;
-  }
-
-  // Test for A's keys different from B.
-  for (let i = 0; i < keysA.length; i++) {
-    if (
-      !hasOwnProperty.call(objB, keysA[i]) || // A B 中包含相同元素且相等，函数也是直接用 === 来比较
-      !is(objA[keysA[i]], objB[keysA[i]])
-    ) {
-      return false;
+  /**
+   * inlined Object.is polyfill to avoid requiring consumers ship their own
+   * https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/is
+   */
+  function is(x: mixed, y: mixed): boolean {
+    // SameValue algorithm
+    if (x === y) { // Steps 1-5, 7-10
+      // Steps 6.b-6.e: +0 != -0
+      // Added the nonzero y check to make Flow happy, but it is redundant
+      return x !== 0 || y !== 0 || 1 / x === 1 / y;
+    } else {
+      // Step 6.a: NaN == NaN
+      return x !== x && y !== y;
     }
   }
+  /**
+   * Performs equality by iterating through keys on an object and returning false
+   * when any key has values which are not strictly equal between the arguments.
+   * Returns true when the values of all keys are strictly equal.
+   */
+  function shallowEqual(objA: mixed, objB: mixed): boolean {
+    if (is(objA, objB)) { // 如果 ===，返回 true
+      return true;
+    }
 
-  return true;
-}
+
+    if (typeof objA !== 'object' || objA === null ||
+        typeof objB !== 'object' || objB === null) {
+      return false;
+    }
+
+    const keysA = Object.keys(objA);
+    const keysB = Object.keys(objB);
+
+    if (keysA.length !== keysB.length) {
+      return false;
+    }
+
+    // Test for A's keys different from B.
+    for (let i = 0; i < keysA.length; i++) {
+      if (
+        !hasOwnProperty.call(objB, keysA[i]) || // A B 中包含相同元素且相等，函数也是直接用 === 来比较
+        !is(objA[keysA[i]], objB[keysA[i]])
+      ) {
+        return false;
+      }
+    }
+
+    return true;
+  }
 ```
 
 `shallowEqual` 会对Object的每个属性，如果是非引用类型，那么可以直接比较判断是否相等。如果是引用类型，则通过比较引用的地址进行严格比较（===）。当 props 和 state 是不可突变数据的时候，可以直接使用 PureComponent。
@@ -138,7 +145,17 @@ function shallowEqual(objA: mixed, objB: mixed): boolean {
 
 将原组件继承自React.Component,替换为React.PureComponent
 
-![](/source/img/javascript/pure-component.png)
+```JavaScript
+  import React, { PureComponent } from React
+
+  class Foo extend PureComponent {
+    render() {
+      // ...
+    }
+  }
+
+  export default Foo
+```
 
 ### 实现 shouldComponentUpdate
 我们知道`PureComponent`的`shadowEqual`只会浅检查组件的`props`和`state`,所以嵌套对象和数组是不会被比较的。所以如果是需要深比较，我们也可以使用`shouldComponentUpdate`来手动单个比较是否需要重新渲染。
@@ -148,11 +165,11 @@ function shallowEqual(objA: mixed, objB: mixed): boolean {
 所以在一些情况下，你可以通过重写这个生命周期函数`shouldComponentUpdate`来提升渲染效率。这个函数默认返回`true`。如果你知道在某些情况下你的组件不需要更新，你可以在`shouldComponentUpdate`内返回`false`来跳过整个渲染进程。
 
 ```javascript
-shouldComponetUpdate(nextProps, nextState) {
-  if (/* do some compare*/) {
-      reture true;
-  }  
-}
+  shouldComponetUpdate(nextProps, nextState) {
+    if (/* do some compare*/) {
+        reture true;
+    }  
+  }
 ```
 
 ### plugin-transform-react-inline-elements
@@ -161,24 +178,26 @@ shouldComponetUpdate(nextProps, nextState) {
 在production环境，优化`React.createElement` function为`babelHelpers.jsx`
 
 > In
+
 ```javascript
-    <Baz foo="bar" key="1"></Baz>
+  <Baz foo="bar" key="1"></Baz>
 ```
 
 > Out
+
 ```javascript
-    babelHelpers.jsx(Baz, {
-        foo: "bar"
-    }, "1");
+  babelHelpers.jsx(Baz, {
+      foo: "bar"
+  }, "1");
 
-    /**
-    * Instead of
-    */
+  /**
+  * Instead of
+  */
 
-    React.createElement(Baz, {
-      foo: "bar",
-      key: "1",
-    });
+  React.createElement(Baz, {
+    foo: "bar",
+    key: "1",
+  });
 
 ```
 
