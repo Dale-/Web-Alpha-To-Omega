@@ -66,13 +66,12 @@ React 15.4.0引入了性能时间轴的功能，可以更直观的了解可视�
 > 使用方法
 
 将原组件继承自React.Component,替换为React.PureComponent
-<figure class="video_container">
-    <iframe
-    src="https://carbon.now.sh/embed/?bg=rgba(171%2C%20184%2C%20195%2C%201)&t=seti&wt=none&l=javascript&ds=false&dsyoff=9px&dsblur=88px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fm=Hack&fs=14px&lh=133%25&si=false&code=import%2520React%252C%2520%257B%2520PureComponent%2520%257D%2520from%2520'react'%250A%250Aclass%2520Foo%2520extends%2520PureComponent%2520%257B%250A%2520%2520%2520%2520render()%2520%257B%250A%2520%2520%2520%2520%2520%2520%2520%2520%252F%252F%2520...%250A%2520%2520%2520%2520%257D%250A%257D%250A%250Aexport%2520default%2520Foo%253B&es=2x&wm=false"
-    style="transform:scale(0.7); width:1024px; height:473px; border:0; overflow:hidden;"
-    sandbox="allow-scripts allow-same-origin">
-    </iframe>
-</figure>
+
+<iframe
+src="https://carbon.now.sh/embed/?bg=rgba(171%2C%20184%2C%20195%2C%201)&amp;amp;t=seti&amp;amp;wt=none&amp;l=javascript&amp;ds=false&amp;dsyoff=9px&amp;dsblur=88px&amp;wc=true&amp;wa=false&amp;pv=0px&amp;ph=0px&amp;ln=false&amp;fm=Hack&amp;fs=14px&amp;lh=133%25&amp;si=false&amp;code=import%2520React%252C%2520%257B%2520PureComponent%2520%257D%2520from%2520'react'%250A%250Aclass%2520Foo%2520extends%2520PureComponent%2520%257B%250A%2520%2520%2520%2520render()%2520%257B%250A%2520%2520%2520%2520%2520%2520%2520%2520%252F%252F%2520...%250A%2520%2520%2520%2520%257D%250A%257D%250A%250Aexport%2520default%2520Foo%253B&amp;es=2x&amp;wm=false"
+style="transform:scale(0.7); width:1024px; height:473px; border:0; overflow:hidden;"
+sandbox="allow-scripts allow-same-origin">
+</iframe>
 
 ### 实现 shouldComponentUpdate
 我们知道`PureComponent`的`shadowEqual`只会浅检查组件的`props`和`state`,所以嵌套对象和数组是不会被比较的。所以如果是需要深比较，我们也可以使用`shouldComponentUpdate`来手动单个比较是否需要重新渲染。
@@ -107,7 +106,7 @@ shouldComponetUpdate(nextProps, nextState) {
 
     /**
     * Instead of
-    * 
+    *
     * React.createElement(Baz, {
     *   foo: "bar",
     *   key: "1",
@@ -123,6 +122,3 @@ shouldComponetUpdate(nextProps, nextState) {
 * 稳定的: 元素的 key 不应随时间、页面刷新或者元素重新排序而变
 
 当使用数组中的索引作为 key时，若元素没有重排，该方法效果不错。但是如果其中的item被删除或移动导致重排,则整个key 就失去了与原项的对应关系，加大了diff的开销。
-
-  
-
