@@ -1,8 +1,10 @@
 ## React渲染机制
-React不直接操作真实DOM，它在内部维护了一套快速相应的虚拟DOM(本篇文章简称为VDOM)，`render`方法返回一个VDOM的描述，React会在reconsilation之后最小化的进行VDOM的更新，最终patch到真实的DOM。
 
-下面官网给出的React组件渲染机制描述图
 ![](/source/img/javascript/react-update.png)
+
+上图官网给出的React组件渲染机制描述图
+
+React不直接操作真实DOM，它在内部维护了一套快速相应的虚拟DOM(本篇文章简称为VDOM)，`render`方法返回一个VDOM的描述，React会在reconsilation之后最小化的进行VDOM的更新，最终patch到真实的DOM。
 
 我们再来看看 触发组件更新的流程图
 
@@ -211,4 +213,6 @@ React 官方文档里推荐的性能检测方法，是对 Chrome Devtool 的加�
 当使用数组中的索引作为 key时，若元素没有重排，该方法效果不错。但是如果其中的item被删除或移动导致重排,则整个key 就失去了与原项的对应关系，加大了diff的开销。
 
 ## 参考
-[Why Did You Update](https://hackernoon.com/make-react-fast-again-part-2-why-did-you-update-43a89dc96b10)
+* [Tool: Why Did You Update](https://github.com/maicki/why-did-you-update)
+  
+* [React 渲染机制](https://react.docschina.org/docs/optimizing-performance.html)
