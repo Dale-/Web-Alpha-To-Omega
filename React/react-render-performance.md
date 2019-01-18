@@ -1,10 +1,23 @@
+## 前言
+
+React使用几种巧妙的技术来最大限度地减少更新UI所需的昂贵的 DOM 操作的数量, 今天我们通过对React渲染机制的回顾，从一些性能检测工具入手，介绍一些优化React应用性能的办法。
+
 ## React渲染机制
+
+React不直接操作真实DOM，它在内部维护了一套快速相应的虚拟DOM(本篇文章简称为VDOM)，`render`方法返回一个VDOM的描述，React会在reconsilation之后最小化的进行VDOM的更新，最终patch到真实的DOM。
 
 ![](/source/img/javascript/react-update.png)
 
 上图官网给出的React组件渲染机制描述图
 
-React不直接操作真实DOM，它在内部维护了一套快速相应的虚拟DOM(本篇文章简称为VDOM)，`render`方法返回一个VDOM的描述，React会在reconsilation之后最小化的进行VDOM的更新，最终patch到真实的DOM。
+根据渲染流程，首先会判断shouldComponentUpdate(SCU)是否需要更新。如果需要更新，则调用组件的render生成新的虚拟DOM，然后再与旧的虚拟DOM对比(vDOMEq)，如果对比一致就不更新，如果对比不同，则根据最小粒度改变去更新DOM；如果SCU不需要更新，则直接保持不变，同时其子元素也保持不变。
+
+* C1根节点，绿色SCU (true)，表示需要更新，然后vDOMEq红色，表示虚拟DOM不一致，需要更新。
+* C2节点，红色SCU (false)，表示不需要更新，所以C4,C5均不再进行检查
+* C3节点同C1，需要更新
+* C6节点，绿色SCU (true)，表示需要更新，然后vDOMEq红色，表示虚拟DOM不一致，更新DOM。
+* C7节点同C2
+* C8节点，绿色SCU (true)，表示需要更新，然后vDOMEq绿色，表示虚拟DOM一致，不更新DOM。
 
 我们再来看看 触发组件更新的流程图
 
@@ -216,3 +229,5 @@ React 官方文档里推荐的性能检测方法，是对 Chrome Devtool 的加�
 * [Tool: Why Did You Update](https://github.com/maicki/why-did-you-update)
   
 * [React 渲染机制](https://react.docschina.org/docs/optimizing-performance.html)
+
+* [React 性能优化](https://reactjs.org/docs/optimizing-performance.html)
