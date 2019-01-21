@@ -216,6 +216,8 @@ React 官方文档里推荐的性能检测方法，是对 Chrome Devtool 的加�
 
 ```
 
+### immutable
+
 ### 使用稳定的 `key`
 
 > 使用稳定的 key, 对子组件进行唯一性识别，准确知道要操作的自组件，提高DOM DIFF的效率
@@ -224,6 +226,7 @@ React 官方文档里推荐的性能检测方法，是对 Chrome Devtool 的加�
 * 稳定的: 元素的 key 不应随时间、页面刷新或者元素重新排序而变
 
 当使用数组中的索引作为 key时，若元素没有重排，该方法效果不错。但是如果其中的item被删除或移动导致重排,则整个key 就失去了与原项的对应关系，加大了diff的开销。
+
 
 ## 参考
 * [Tool: Why Did You Update](https://github.com/maicki/why-did-you-update)
