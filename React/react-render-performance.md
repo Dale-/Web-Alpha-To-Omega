@@ -172,6 +172,65 @@ React 官方文档里推荐的性能检测方法，是对 Chrome Devtool 的加�
   export default Foo
 ```
 
+### immutable
+我们也可以在`shouldComponentUpdate()`中使用深拷贝来避免无必要的 render()，但deepCopy 和 deepCompare 一般都是非常耗性能的。FaceBook官方提出的不可变数据[ImmutableJS](https://facebook.github.io/immutable-js/)，使用structural sharing解决了复杂数据在 deepCopy 和 deepCompare过程中性能损耗的问题。
+
+ImmutableJS拥有 Persistent Data Structure（持久化数据结构）与 structural sharing（结构共享）的特点。持久化数据结构保证数据一旦创建就不能修改，使用旧数据创建新数据时，旧数据也不会改变。而结构共享是指没有改变的数据共用一个引用，这样既减少了深拷贝的性能消耗们也减少了内存开销。
+
+![](/source/img/javascript/immutable-structural-sharing.png)
+
+左边红色节点表示变化的值，右边生成新值改变了红色节点到根节点路径之间的所有节点，也就是所有绿色节点的值，其他使用它的地方并不会受到影响，而且蓝色节点还是和旧值共享的。即如果对象树中一个节点发生变化，只修改这个节点和受它影响的父节点，其它节点则进行共享。
+
+`ImmutableJS` 提供了大量的方法去更新、删除、添加数据，极大的方便了我们操纵数据。除此之外，还提供了原生类型与 `ImmutableJS` 类型判断与转换方法 
+
+```javascript
+import { Map, fromJS, isImmutable  } from "immutable";
+const map1 = Map({ a: 'a', b: 'b', c: 'c' });
+const map2 = map1.set('b', 'bb');
+map1 !== map2; // true
+map1.get('b'); // b
+map2.get('b'); // bb
+map1.get('a') === map2.get('a'); // true
+
+const object = fromJS({
+  a: 'a',
+  b: [1, 2, 3, 4]
+}); // 支持混合类型
+isImmutable(obj); // true
+obj.size(); // 2
+const obj1 = obj.toJS(); // 转换成原生 `js` 类型
+```
+
+
+Immutable 则提供了简洁高效的判断数据是否变化的方法，只需 === 和 is 比较就能知道是否需要执行 render()，而这个操作成本很低，所以可以极大提高性能。我们可以使用is来控制 shouldComponentUpdate：
+
+```javascript
+import { is } from 'immutable';
+
+shouldComponentUpdate: (nextProps = {}, nextState = {}) => {
+  const thisProps = this.props || {}, thisState = this.state || {};
+
+  if (Object.keys(thisProps).length !== Object.keys(nextProps).length ||
+      Object.keys(thisState).length !== Object.keys(nextState).length) {
+    return true;
+  }
+
+  for (const key in nextProps) {
+    if (!is(thisProps[key], nextProps[key])) {
+      return true;
+    }
+  }
+
+  for (const key in nextState) {
+    if (thisState[key] !== nextState[key] || !is(thisState[key], nextState[key])) {
+      return true;
+    }
+  }
+  return false;
+}
+```
+
+
 ### 实现 shouldComponentUpdate
 我们知道`PureComponent`的`shadowEqual`只会浅检查组件的`props`和`state`,所以嵌套对象和数组是不会被比较的。所以如果是需要深比较，我们也可以使用`shouldComponentUpdate`来手动单个比较是否需要重新渲染。
 
@@ -216,8 +275,6 @@ React 官方文档里推荐的性能检测方法，是对 Chrome Devtool 的加�
 
 ```
 
-### immutable
-
 ### 使用稳定的 `key`
 
 > 使用稳定的 key, 对子组件进行唯一性识别，准确知道要操作的自组件，提高DOM DIFF的效率
@@ -232,7 +289,7 @@ React 官方文档里推荐的性能检测方法，是对 Chrome Devtool 的加�
 React官方在0.14版本中加入了`无状态组件`, 这种组件没有状态，没有生命周期，接受props渲染生成DOM结构。无状态组件非常简单，开销很低，如果一个组件不需要管理state只是纯展示，那么就可以定义成无状态组件。
 
 ```javascript
-const Component (props)=>(
+const Component (props) => (
     <div>
         {props.text}
         ...
@@ -249,3 +306,5 @@ const Component (props)=>(
 * [React 渲染机制](https://react.docschina.org/docs/optimizing-performance.html)
 
 * [React 性能优化](https://reactjs.org/docs/optimizing-performance.html)
+
+* [ImmutableJS](https://facebook.github.io/immutable-js/)
