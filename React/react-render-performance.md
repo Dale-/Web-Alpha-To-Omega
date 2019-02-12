@@ -75,8 +75,6 @@ React 官方文档里推荐的性能检测方法，是对 Chrome Devtool 的加�
 
 ![](/source/img/javascript/react_perf.png)
 
-*这些数字是相对的，因此组件在生产版本中会运行更快*。然而，这也能够帮助你了解何时会有无关的组件被错误的更新，以及你的组件更新的深度和频率。
-
 > Performance的四个窗格
 
 ![](/source/img/javascript/timeline-annotated.png)
@@ -84,7 +82,10 @@ React 官方文档里推荐的性能检测方法，是对 Chrome Devtool 的加�
 * Controls
 * Overview: 从FPS、CPU、NET三方面进行性能汇总。
 * 火焰图
-* 记录详细信息：在火焰图中选择事件时，Details窗格会显示与事件相关的其他信息。
+* 记录详细信息:在火焰图中选择事件时，Details窗格会显示与事件相关的其他信息。
+
+
+这些数字是相对的，因此组件在生产版本中会运行更快*。然而，这也能够帮助你了解何时会有无关的组件被错误的更新，以及你的组件更新的深度和频率。
 
 ## 优化方法
 ### PureComponent
