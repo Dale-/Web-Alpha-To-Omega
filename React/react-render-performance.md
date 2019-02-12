@@ -75,6 +75,9 @@ React 官方文档里推荐的性能检测方法，是对 Chrome Devtool 的加�
 
 ![](/source/img/javascript/react_perf.png)
 
+这些数字是相对的，因此组件在生产版本中会运行更快*。然而，这也能够帮助你了解何时会有无关的组件被错误的更新，以及你的组件更新的深度和频率。
+
+
 > Performance的四个窗格
 
 ![](/source/img/javascript/timeline-annotated.png)
@@ -82,10 +85,8 @@ React 官方文档里推荐的性能检测方法，是对 Chrome Devtool 的加�
 * Controls
 * Overview: 从FPS、CPU、NET三方面进行性能汇总。
 * 火焰图
-* 记录详细信息:在火焰图中选择事件时，Details窗格会显示与事件相关的其他信息。
+* 记录详细信息: 在火焰图中选择事件时，Details窗格会显示与事件相关的其他信息。
 
-
-这些数字是相对的，因此组件在生产版本中会运行更快*。然而，这也能够帮助你了解何时会有无关的组件被错误的更新，以及你的组件更新的深度和频率。
 
 ## 优化方法
 ### PureComponent
@@ -182,14 +183,15 @@ React 官方文档里推荐的性能检测方法，是对 Chrome Devtool 的加�
   export default Foo
 ```
 
-### immutable
-我们也可以在`shouldComponentUpdate()`中使用深拷贝来避免无必要的 render()，但deepCopy 和 deepCompare 一般都是非常耗性能的。FaceBook官方提出的不可变数据[ImmutableJS](https://facebook.github.io/immutable-js/)，使用structural sharing解决了复杂数据在 deepCopy 和 deepCompare过程中性能损耗的问题。
+### ImmutableJS
 
-ImmutableJS拥有 Persistent Data Structure（持久化数据结构）与 structural sharing（结构共享）的特点。持久化数据结构保证数据一旦创建就不能修改，使用旧数据创建新数据时，旧数据也不会改变。而结构共享是指没有改变的数据共用一个引用，这样既减少了深拷贝的性能消耗们也减少了内存开销。
+我们也可以在`shouldComponentUpdate()`中使用深拷贝来避免无必要的 render()，但deepCopy 和 deepCompare 一般都是非常耗性能的。FaceBook官方提出的不可变数据[ImmutableJS](https://facebook.github.io/immutable-js/)，使用structural sharing解决了复杂数据在 deepCopy 和 deepCompare过程中性能损耗的问题。
+
+ImmutableJS拥有 Persistent Data Structure（持久化数据结构）与 structural sharing（结构共享）的特点。持久化数据结构保证数据一旦创建就不能修改，使用旧数据创建新数据时，旧数据也不会改变。而结构共享是指没有改变的数据共用一个引用，这样既减少了深拷贝的性能消耗们也减少了内存开销。
 
 ![](/source/img/javascript/immutable-structural-sharing.png)
 
-左边红色节点表示变化的值，右边生成新值改变了红色节点到根节点路径之间的所有节点，也就是所有绿色节点的值，其他使用它的地方并不会受到影响，而且蓝色节点还是和旧值共享的。即如果对象树中一个节点发生变化，只修改这个节点和受它影响的父节点，其它节点则进行共享。
+左边红色节点表示变化的值，右边生成新值改变了红色节点到根节点路径之间的所有节点，也就是所有绿色节点的值，其他使用它的地方并不会受到影响，而且蓝色节点还是和旧值共享的。即如果对象树中一个节点发生变化，只修改这个节点和受它影响的父节点，其它节点则进行共享。
 
 `ImmutableJS` 提供了大量的方法去更新、删除、添加数据，极大的方便了我们操纵数据。除此之外，还提供了原生类型与 `ImmutableJS` 类型判断与转换方法 
 
@@ -307,7 +309,7 @@ const Component (props) => (
 )
 ```
 
-因为无状态组件只是函数，没有实例返回，所以没有refs属性。
+因为无状态组件只是函数，没有实例返回，所以没有refs属性。
 
 
 ## 参考
