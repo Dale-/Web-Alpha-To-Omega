@@ -288,7 +288,7 @@ shouldComponentUpdate: (nextProps = {}, nextState = {}) => {
 ```
 
 
-### 无状态组件
+### 无状态组件 (Stateless Component)
 
 React官方在0.14版本中加入了`无状态组件`, 这种组件没有状态，没有生命周期，接受props渲染生成DOM结构。无状态组件非常简单，开销很低，如果一个组件不需要管理state只是纯展示，那么就可以定义成无状态组件。
 
@@ -301,7 +301,11 @@ const Component (props) => (
 )
 ```
 
-因为无状态组件只是函数，没有实例返回，所以没有refs属性。
+原本需要写类定义( `React.createClass` 或 `extends React.component`)来创建自己组件的定义，现在被精简成了上述代码。由于这是一个无状态函数，React在渲染的时候也省掉了将"组件类"实例化的过程。
+
+> 无状态组件不支持"ref"
+
+需要注意的是，因为无状态组件只是函数，没有实例返回，所以没有refs属性。
 
 
 ### 使用稳定的 `key`
