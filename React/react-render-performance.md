@@ -319,4 +319,4 @@ const Component (props) => (
 
 * [React 性能优化](https://reactjs.org/docs/optimizing-performance.html)
 
-* [ImmutableJS](https://facebook.github.io/immutable-js/)
+* [优化方法: ImmutableJS](https://facebook.github.io/immutable-js/)
