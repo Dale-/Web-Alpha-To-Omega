@@ -123,6 +123,7 @@
 * [Carbon](https://carbon.now.sh): Create and share beautiful images of your source code
 * Chrome Developer Tools
 * [Postman](https://www.getpostman.com/)
+* [Make learning awesome](https://kahoot.com/)
 
 ### API Query Language
 * GraphQL [Simple Demo](https://github.com/Dale-/GraphQL-Demo)
