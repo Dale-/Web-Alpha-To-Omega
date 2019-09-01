@@ -132,6 +132,9 @@
 * RESTful
 
 ### Mini Program
+* [Taro](https://github.com/NervJS/taro)
+* [WePY](https://github.com/Tencent/wepy)
+* [mpvue](https://github.com/Meituan-Dianping/mpvue)
 
 ### Standard
 * [commit message](https://juejin.im/post/5afc5242f265da0b7f44bee4)
